@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YMArcTableViewController.h
 //  MemoryIssues
 //
 //  Created by Александр О. Кургин on 23.09.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YMArcTableViewController : UITableViewController
 
 @end
-

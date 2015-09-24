@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		555367001BB32BE200453B7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 555366FF1BB32BE200453B7C /* main.m */; };
 		555367031BB32BE200453B7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 555367021BB32BE200453B7C /* AppDelegate.m */; };
-		555367061BB32BE200453B7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555367051BB32BE200453B7C /* ViewController.m */; };
 		555367091BB32BE200453B7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555367071BB32BE200453B7C /* Main.storyboard */; };
 		5553670B1BB32BE200453B7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5553670A1BB32BE200453B7C /* Images.xcassets */; };
 		5553670E1BB32BE200453B7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5553670C1BB32BE200453B7C /* LaunchScreen.xib */; };
 		5553671A1BB32BE200453B7C /* MemoryIssuesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 555367191BB32BE200453B7C /* MemoryIssuesTests.m */; };
+		555367251BB3345600453B7C /* YMArcTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555367241BB3345600453B7C /* YMArcTableViewController.m */; };
+		555367281BB3346500453B7C /* YMNonArcTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555367271BB3346500453B7C /* YMNonArcTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5553672B1BB352A600453B7C /* YMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5553672A1BB352A600453B7C /* YMActionItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		555366FF1BB32BE200453B7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		555367011BB32BE200453B7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		555367021BB32BE200453B7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		555367041BB32BE200453B7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		555367051BB32BE200453B7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		555367081BB32BE200453B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5553670A1BB32BE200453B7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5553670D1BB32BE200453B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		555367131BB32BE200453B7C /* MemoryIssuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryIssuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555367181BB32BE200453B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		555367191BB32BE200453B7C /* MemoryIssuesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryIssuesTests.m; sourceTree = "<group>"; };
+		555367231BB3345600453B7C /* YMArcTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMArcTableViewController.h; sourceTree = "<group>"; };
+		555367241BB3345600453B7C /* YMArcTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMArcTableViewController.m; sourceTree = "<group>"; };
+		555367261BB3346500453B7C /* YMNonArcTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNonArcTableViewController.h; sourceTree = "<group>"; };
+		555367271BB3346500453B7C /* YMNonArcTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNonArcTableViewController.m; sourceTree = "<group>"; };
+		555367291BB352A600453B7C /* YMActionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMActionItem.h; sourceTree = "<group>"; };
+		5553672A1BB352A600453B7C /* YMActionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMActionItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,12 @@
 			children = (
 				555367011BB32BE200453B7C /* AppDelegate.h */,
 				555367021BB32BE200453B7C /* AppDelegate.m */,
-				555367041BB32BE200453B7C /* ViewController.h */,
-				555367051BB32BE200453B7C /* ViewController.m */,
+				555367231BB3345600453B7C /* YMArcTableViewController.h */,
+				555367241BB3345600453B7C /* YMArcTableViewController.m */,
+				555367261BB3346500453B7C /* YMNonArcTableViewController.h */,
+				555367271BB3346500453B7C /* YMNonArcTableViewController.m */,
+				555367291BB352A600453B7C /* YMActionItem.h */,
+				5553672A1BB352A600453B7C /* YMActionItem.m */,
 				555367071BB32BE200453B7C /* Main.storyboard */,
 				5553670A1BB32BE200453B7C /* Images.xcassets */,
 				5553670C1BB32BE200453B7C /* LaunchScreen.xib */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555367061BB32BE200453B7C /* ViewController.m in Sources */,
+				555367251BB3345600453B7C /* YMArcTableViewController.m in Sources */,
+				5553672B1BB352A600453B7C /* YMActionItem.m in Sources */,
 				555367031BB32BE200453B7C /* AppDelegate.m in Sources */,
+				555367281BB3346500453B7C /* YMNonArcTableViewController.m in Sources */,
 				555367001BB32BE200453B7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MemoryIssues/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

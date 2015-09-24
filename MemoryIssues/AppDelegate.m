@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  MemoryIssues
 //
-//  Created by Александр О. Кургин on 23.09.15.
+//  Created by Александр О. Кургин on 15.09.15.
 //  Copyright (c) 2015 Yandex.Money. All rights reserved.
 //
 
